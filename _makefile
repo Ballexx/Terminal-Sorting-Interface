@@ -1,0 +1,14 @@
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra
+
+SRCS = main.cpp sorter.cpp algorithm.cpp
+
+TARGET = sorter_app
+
+all: $(TARGET)
+
+$(TARGET): $(SRCS)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRCS)
+
+clean:
+	rm -f $(TARGET)

@@ -1,0 +1,36 @@
+#include "sorter.hpp"
+#include "algorithm.hpp"
+#include <iostream>
+
+int main(){
+    int list_len;
+    int algorithm_type;
+
+    system("cls");
+    
+    std::cout << "Amount of lines you would like to sort?"<< std::endl;
+    std::cout << std::endl;
+    std::cin >> list_len;
+    
+    system("cls");
+
+    std::cout << "What sorting algorithm?" << std::endl;
+    std::cout << "1. Bubble sort" << std::endl;
+
+    std::cout << std::endl;
+    std::cin >> algorithm_type;
+    
+    system("cls");
+
+    Sorter sort(list_len);
+
+    switch (algorithm_type){
+        case 1:
+            bubble_sort(sort);
+            break;
+        default:
+            std::cout << "Invalid algorithm entered" << std::endl;
+    }
+
+	return 0;
+}
