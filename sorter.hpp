@@ -5,7 +5,6 @@
 
 class Sorter{
     public:
-    
     Sorter(int len);
     void shuffle_list();
     int generate_random_number(int min, int max);
@@ -14,7 +13,6 @@ class Sorter{
     void print_list() const;
 
     private:
-
     const int list_len;
     std::vector<int> list;
 };

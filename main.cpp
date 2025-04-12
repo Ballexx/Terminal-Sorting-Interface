@@ -29,7 +29,8 @@ int main(){
             bubble_sort(sort);
             break;
         default:
-            std::cout << "Invalid algorithm entered" << std::endl;
+            std::cout << "Invalid input" << std::endl;
+            return 1;
     }
 
 	return 0;

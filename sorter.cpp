@@ -38,3 +38,14 @@ void Sorter::print_list() const {
         std::cout << list[i] << " ";
     }
 }
+
+void display(std::vector<int> list, int list_len){
+    system("cls");
+
+    for(int i = 0; i < list_len; i++){
+        for(int j = 0; j < list_len; j++){
+            std::cout << char(219) << char(219);
+        }
+        std::cout << '\n';
+    }
+}   
