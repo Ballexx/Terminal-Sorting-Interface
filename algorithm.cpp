@@ -9,7 +9,8 @@ void bubble_sort(Sorter sorter){
     const int list_len = sorter.get_list_len();
     std::vector<int> list = sorter.get_list();
 
-    Screen console(100, 100);
+    Screen console;
+    console.set_screen_buffer();
 
     for (int step = 0; step < (list_len-1); ++step) {
         int swapped = 0;
