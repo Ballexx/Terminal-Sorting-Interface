@@ -4,5 +4,7 @@
 #include "sorter.hpp"
 
 void bubble_sort(Sorter sorter);
+void selection_sort(Sorter sorter);
+void merge_sort(Sorter sorter);
 
 #endif

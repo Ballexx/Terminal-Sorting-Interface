@@ -16,6 +16,8 @@ int main(){
 
     std::cout << "What sorting algorithm?" << std::endl;
     std::cout << "1. Bubble sort" << std::endl;
+    std::cout << "2. Selection sort" << std::endl;
+    std::cout << "3. Merge sort" << std::endl;
 
     std::cout << std::endl;
     std::cin >> algorithm_type;
@@ -27,6 +29,12 @@ int main(){
     switch (algorithm_type){
         case 1:
             bubble_sort(sort);
+            break;
+        case 2:
+            selection_sort(sort);
+            break;
+        case 3:
+            merge_sort(sort);
             break;
         default:
             std::cout << "Invalid input" << std::endl;
